@@ -8,7 +8,7 @@ const server = http.createServer(app);
 
 // Usar CORS para permitir conexiones desde otros orígenes
 app.use(cors({
-    origin: 'http://192.168.0.213',  // Aquí especificas el origen de tu app React Vite
+    origin: '*',  // Aquí especificas el origen de tu app React Vite
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type'],
 }));
